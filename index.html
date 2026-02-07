@@ -65,7 +65,8 @@
       "./Images/image4.gif",
       "./Images/image5.gif",
       "./Images/image6.gif",
-      "./Images/image7.gif"
+      "./Images/image7.gif",
+      "./Images/banana_cat_cryin.gif"
     ];
   
     noButton.addEventListener('click', function() {
@@ -78,8 +79,8 @@
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..."][noClickCount];
+        if (noClickCount < 7) {
+          noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry...", "I'm crying"][noClickCount];
         }
       }
     });
@@ -94,5 +95,6 @@
 </body>
 
 </html>
+
 
 
