@@ -53,7 +53,7 @@
     const imageDisplay = document.getElementById('imageDisplay');
     const valentineQuestion = document.getElementById('valentineQuestion');
     const responseButtons = document.getElementById('responseButtons');
-  
+
     let noClickCount = 0;
     let buttonHeight = 48; // Starting height in pixels
     let buttonWidth = 80;
@@ -66,8 +66,15 @@
       "./images/image5.gif",
       "./images/image6.gif",
       "./images/image7.gif"
+      "./Images/image1.gif",
+      "./Images/image2.gif",
+      "./Images/image3.gif",
+      "./Images/image4.gif",
+      "./Images/image5.gif",
+      "./Images/image6.gif",
+      "./Images/image7.gif"
     ];
-  
+
     noButton.addEventListener('click', function() {
       if (noClickCount < 5) {
         noClickCount++;
@@ -79,17 +86,18 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..." ][noClickCount];
+          noButton.textContent = ["No", "Are you sure?", "Pookie please", "Don't do this to me :(", "You're breaking my heart", "I'm gonna cry..."][noClickCount];
         }
       }
     });
-  
+
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = "./images/image7.gif"; // Change to image7.gif
+      imageDisplay.src = './images/image7.gif'; // Change to image7.gif
       valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
     });
   </script>  
 </body>
+
 </html>
